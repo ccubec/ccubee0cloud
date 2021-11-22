@@ -17,6 +17,8 @@
         <java.version>11</java.version>
     </properties>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>ccubee-alibaba-cloud</module>
         <module>ccubee-cloud-parent</module>

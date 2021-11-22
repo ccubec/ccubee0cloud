@@ -29,7 +29,8 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>alibaba-cloud-service</artifactId>
+            <artifactId>alibaba-cloud-service-impl</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
 

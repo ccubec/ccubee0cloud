@@ -17,4 +17,5 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
-
+  main:
+    allow-bean-definition-overriding: true

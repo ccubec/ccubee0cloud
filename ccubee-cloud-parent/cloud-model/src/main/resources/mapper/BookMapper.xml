@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.cloud.mapper.BookMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.cloud.model.domain.Book">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="bookName" column="book_name" jdbcType="VARCHAR"/>
+            <result property="author" column="author" jdbcType="VARCHAR"/>
+            <result property="category" column="category" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="bookStatus" column="book_status" jdbcType="VARCHAR"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="lender" column="lender" jdbcType="VARCHAR"/>
+            <result property="lenderId" column="lender_id" jdbcType="VARCHAR"/>
+            <result property="key" column="key" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="saleNum" column="sale_num" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,book_name,author,
+        category,create_time,status,
+        book_status,url,lender,
+        lender_id,key,update_time,
+        sale_num
+    </sql>
+</mapper>

@@ -6,7 +6,10 @@ package com.example.cloud.api.constant;
  * @author root
  * @date 2021/11/22
  */
-public class CloudPathConstant {
+public interface CloudPathConstant {
 
+    String BOOK = "book";
+
+    String APPLICATION_NAME = "cloud";
 
 }

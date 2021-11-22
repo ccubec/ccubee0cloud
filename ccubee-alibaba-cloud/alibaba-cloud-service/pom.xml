@@ -18,12 +18,19 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>alibaba-cloud-dao</artifactId>
+            <artifactId>alibaba-cloud-dao-xml</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>alibaba-cloud-client-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>alibaba-cloud-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
