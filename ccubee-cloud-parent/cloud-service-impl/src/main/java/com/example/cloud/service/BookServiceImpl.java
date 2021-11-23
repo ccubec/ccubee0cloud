@@ -20,14 +20,19 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class BookServiceImpl extends ServiceImpl<BookMapper, Book> implements BookService {
 
-
-//    private final BookMapper bookMapper;
+    private final BookMapper bookMapper;
 
     @Override
     public BookVo findByCondition(BookReq req) {
         Book book = this.getById(req.getId());
         BookVo bookVo = BeanUtil.copyProperties(book, BookVo.class);
         return bookVo;
+    }
+
+    @Override
+    public BookVo findById(Integer id) {
+        Book book = bookMapper.selectById(id);
+        return BeanUtil.copyProperties(book, BookVo.class);
     }
 }
 

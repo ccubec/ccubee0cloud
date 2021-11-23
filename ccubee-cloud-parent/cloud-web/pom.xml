@@ -55,7 +55,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.example.cloud.web.CloudWebApplication</mainClass>
+                    <mainClass>com.example.cloud.web.rest.CloudWebApplication</mainClass>
                     <fork>true</fork>
                 </configuration>
                 <executions>

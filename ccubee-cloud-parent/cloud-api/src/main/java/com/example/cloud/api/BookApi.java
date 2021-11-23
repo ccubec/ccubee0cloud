@@ -4,9 +4,7 @@ import com.example.cloud.api.constant.CloudPathConstant;
 import com.example.cloud.client.model.common.ResultVo;
 import com.example.cloud.client.model.req.BookReq;
 import com.example.cloud.client.model.vo.BookVo;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author ccubee
@@ -24,4 +22,13 @@ public interface BookApi {
      */
     @PostMapping("findByCondition")
     ResultVo<BookVo> findByCondition(@RequestBody BookReq req);
+
+    /**
+     * 发现通过id
+     *
+     * @param id id
+     * @return {@link ResultVo<BookVo>}
+     */
+    @GetMapping("findById")
+    ResultVo<BookVo> findById(@RequestParam Integer id);
 }

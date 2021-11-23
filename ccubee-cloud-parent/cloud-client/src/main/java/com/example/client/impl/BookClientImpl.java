@@ -17,4 +17,9 @@ public class BookClientImpl implements BookClient {
     public ResultVo<BookVo> findByCondition(BookReq req) {
         return ResultVo.fail();
     }
+
+    @Override
+    public ResultVo<BookVo> findById(Integer id) {
+        return ResultVo.fail();
+    }
 }

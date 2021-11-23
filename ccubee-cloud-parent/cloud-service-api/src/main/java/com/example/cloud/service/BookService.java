@@ -20,4 +20,12 @@ public interface BookService extends IService<Book> {
      * @return {@link BookVo}
      */
     BookVo findByCondition(BookReq req);
+
+    /**
+     * 发现通过id
+     *
+     * @param id id
+     * @return {@link BookVo}
+     */
+    BookVo findById(Integer id);
 }
