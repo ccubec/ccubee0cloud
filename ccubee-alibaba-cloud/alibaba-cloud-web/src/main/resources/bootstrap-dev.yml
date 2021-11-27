@@ -4,7 +4,7 @@ spring:
   application:
     name: alibaba-cloud
   datasource:
-    url: jdbc:mysql://localhost::3306/test?autoReconnect=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://localhost:3306/test?autoReconnect=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,5 +17,18 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
+
+    sentinel:
+      filter:
+        enabled: true
+      transport:
+        dashboard: localhost:8080
   main:
     allow-bean-definition-overriding: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

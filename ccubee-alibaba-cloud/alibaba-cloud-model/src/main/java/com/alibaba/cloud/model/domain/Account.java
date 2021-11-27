@@ -11,12 +11,13 @@ import lombok.Data;
  * 
  * @TableName account
  */
-@TableName(value ="account")
+@TableName(value ="t_account")
 @Data
 public class Account implements Serializable {
     /**
      * 
      */
+    @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
@@ -32,7 +33,7 @@ public class Account implements Serializable {
     /**
      * 
      */
-    private Byte type;
+    private Integer type;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

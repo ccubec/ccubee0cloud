@@ -10,8 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author root
  * @date 2021/11/22
  */
-@SpringBootApplication(scanBasePackages = "com.alibaba.cloud.*")
 @EnableDiscoveryClient
+@SpringBootApplication(scanBasePackages = "com.alibaba.cloud.*")
 public class AlibabaCloudWebApplication {
 
     public static void main(String[] args) {

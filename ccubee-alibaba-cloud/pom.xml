@@ -34,6 +34,7 @@
         <module>alibaba-cloud-dao</module>
         <module>alibaba-cloud-dao-xml</module>
         <module>alibaba-cloud-web</module>
+        <module>alibaba-cloud-gateway</module>
     </modules>
 
     <dependencies>
@@ -87,6 +88,12 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>alibaba-cloud-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>alibaba-cloud-service-impl</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
